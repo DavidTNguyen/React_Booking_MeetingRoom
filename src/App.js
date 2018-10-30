@@ -1,28 +1,44 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
+
 import './App.css';
 
+import Booking from './Components/Booking';
+//import DateTimePicker from '@material-ui/core/';
+import Button from '@material-ui/core/Button';
+import Counter from './Components/Counter';
+import DatePickerUI from './Components/DatePickerUI';
+import TimePickerUI from './Components/TimePickerUI';
+import DateTimePickerUI from './Components/DateTimePickerUI';
+
+
+
+
 class App extends Component {
-  render() {
+  render() { 
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Booking />
+        <p />
+
+        <Counter />
+        <p />
+        
+        <Button variant = "contained" color="primary">Hello</Button>
+        <p />
+
+        <DatePickerUI />
+        <p />
+        <TimePickerUI />
+        <p />
+        <DateTimePickerUI />
+
       </div>
     );
   }
+
+
 }
+
 
 export default App;

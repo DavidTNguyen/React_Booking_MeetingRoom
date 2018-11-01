@@ -2,20 +2,13 @@ import React, { Component } from 'react';
 
 
 import './App.css';
-
-import Booking from './Components/Booking';
-//import DateTimePicker from '@material-ui/core/';
-import Button from '@material-ui/core/Button';
-import Counter from './Components/Counter';
-import DatePickerUI from './Components/DatePickerUI';
-import TimePickerUI from './Components/TimePickerUI';
-import DateTimePickerUI from './Components/DateTimePickerUI';
-import SelectControlUI from './Components/SelectControlUI';
-
-//for test
-import JQuerySample from './Components/jQuerySample';
-
-
+import BookingItemListTemplate from './BookingComponents/BookingItemListTemplate';
+import BookingItemListTemplate2 from './BookingComponents/BookingItemListTemplate2';
+import BookingForm from './BookingComponents/BookingForm';
+import BookingForm2 from './BookingComponents/BookingForm2';
+import DateTimeForm from './BookingComponents/DateTimeForm';
+//import SampleUIs;
+import SampleUIs from './UIComponents/SampleUIs';
 
 
 class App extends Component {
@@ -23,30 +16,24 @@ class App extends Component {
   render() { 
 
     return (
-      <div className="App">
-        <Booking />
-        <p />
+      <main>
+        <header className="App-header"><h1>Welcome to the Meeting Room Reservation System</h1></header>
+        <div className="App">
+          {/* <BookingItemListTemplate form={<BookingForm />}>
+            This goes into the children props
+          </BookingItemListTemplate> */}
+          <BookingItemListTemplate2 form={<BookingForm2 />} form2 = {<DateTimeForm />} >
+            This goes into the children props
+          </BookingItemListTemplate2>
+          
 
-        <Counter />
-        <p />
 
-        <Button variant = "contained" color="primary">Hello</Button>
-        <p />
-        <Button variant="contained" color="secondary" >
-        secondary
-        </Button>
-        <p />
 
-        <DatePickerUI />
-        <p />
-        <TimePickerUI />
-        <p />
-        <DateTimePickerUI />
-        <p />
-        <JQuerySample />
-        <p />
-        <SelectControlUI />
-      </div>
+          <p />
+
+        </div>
+      </main>
+
     );
   }
 

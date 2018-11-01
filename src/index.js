@@ -4,14 +4,6 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-/* eslint-disable */
-import MuiPickersUtilsProvider from 'material-ui-pickers/MuiPickersUtilsProvider';
-// pick utils
-//import MomentUtils from 'material-ui-pickers/utils/moment-utils';
-import DateFnsUtils from 'material-ui-pickers/utils/date-fns-utils';
-//import LuxonUtils from 'material-ui-pickers/utils/luxon-utils';
-
-
 
 
 ReactDOM.render(<App />, document.getElementById('root'));
